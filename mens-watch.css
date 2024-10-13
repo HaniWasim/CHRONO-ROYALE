@@ -129,13 +129,18 @@ margin-bottom: 40px;
     font-weight: 300;
     font-style: 12px;
 }
-.innerFlx>h4>span{
-    display: block;
+/* .innerFlx>h4>span{
     margin-top: 10px;
     font-family: var(--font-rale);
     font-size: 32px;
     color: rgba(205, 175, 130, 1);
 
+} */
+.rs{
+    margin-top: 10px;
+    font-family: var(--font-rale);
+    font-size: 32px;
+    color: rgba(205, 175, 130, 1);
 }
 .innerFlx>button{
     padding: 5px 17px;
