@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-rale: "Raleway", sans-serif;
+    --Golden: rgb(193, 146, 35);
+}
+
+body,
+html {
+    background-color: rgb(0, 0, 0);
+    color: var(--Golden);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevents horizontal scroll */
+}
+
+nav>h1 {
+    font-family: var(--font-rale);
+    font-size: 43px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    /* position: fixed; */
+    margin-bottom: 30px;
+    background-color: rgb(71, 71, 71);
+}
+
+.mainDiv1>img {
+    object-fit: cover;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.mainDiv1 {
+    width: 300px;
+    text-align: center;
+    border: .8px solid var(--Golden);
+    border-radius: 10px;
+    background-color: rgb(62, 61, 61);
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    height: 530px;
+}
+
+.mains-watch1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.Off {
+    color: rgb(239, 13, 13);
+    font-size: 22px
+}
+
+.RS2 {
+    color: rgba(134, 133, 133, 0.689);
+    font-size: 17px;
+}
+
+.RS1 {
+    font-size: 17px;
+    /* color: black; */
+
+}
+
+.stars5 {
+    font-weight: bolder;
+    color: black;
+}
+
+
+.hearticn {
+    font-size: 34px;
+    color: var(--Golden);
+    /* font-weight: 100; */
+    display: none;
+}
+
+.forstar {
+    transition: all 1s ease-out;
+
+}
+
+.forstar1:hover .hearticn,
+.forstar2:hover .hearticn,
+.forstar3:hover .hearticn {
+    display: block;
+}
+
+.mains-watch2 {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+
+.mains-watch3 {
+    margin-top: 20px;
+}
+
+/* .mains-watch1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+} */
+.mainDiv1 {
+    /* height: 90vh; */
+    /* align-items: center; */
+    /* float: left//; */
+    /* border: 2px solid pink; */
+}
+
+.mainDiv1>h2 {
+    font-size: 15px;
+}
+
+.mainDiv1>h4 {
+    font-size: 12px;
+    color: rgb(242, 237, 237);
+}
+
+.hearticn {
+    /* display: none;
+    visibility: hidden; */
+}
+
+.forstar3 {
+    margin-right: 10px;
+}
+
+
+.forhver:hover {
+    /* box-shadow: 20px 10px 20px rgba(89, 89, 89, 0.751); */
+}
+
+.mainDiv1>button {
+    background-color: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+    border: 1px solid black;
+    padding: 6px;
+}
+
+.mainDiv1>button:hover {
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid rgb(131, 131, 131);
+}
+nav>div>a>img{
+    /* display: inline; */
+    width: 80px;
+}
+nav>div{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 8px 0 0 10px;
+}
+@media (max-width:728px) {
+    /* .hearticn {
+        font-size: 22px
+    } */
+    .mainDiv1 {
+        border: 1px solid cyan;
+        /* width: 200px;} */
+        height: 550px;}
+}
+
+@media (max-width: 632px) {
+    .mainDiv1>img {
+        object-fit: cover;
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .mainDiv1 {
+        width: 200px;
+        text-align: center;
+        background-color: rgb(62, 61, 61);
+        border: 1px solid red;
+        margin-left: 10px;
+        height: 400px;
+    }
+
+    .Off {
+        color: rgb(239, 13, 13);
+        font-size: 16px
+    }
+
+    .mainDiv1>h2 {
+        font-size: 13px;
+    }
+
+    .mainDiv1>h4 {
+        font-size: 8px;
+        color: rgb(242, 237, 237);
+    }
+
+    .mainDiv1>div>i {
+        font-size: 13px;
+        /* color: rgb(242, 237, 237); */
+    }
+    .mainDiv1>button {
+        padding: 0;
+    }
+    .mainDiv1>div>i{
+font-size: 7px;
+}
+.stars5{
+        font-size: 9px;
+        color: rgb(245, 222, 179);
+
+    }
+
+}
+
+@media (max-width:355px) {
+    .hearticn {
+        font-size: 22px;
+    }
+
+    .Off {
+        color: rgb(239, 13, 13);
+        font-size: 14px
+    }
+
+    .mainDiv1 {
+        border: 1px solid rgb(106, 255, 0);
+
+    }
+}
+
+@media (max-width:334px) {
+
+    .mains-watch1,
+    .mains-watch2 {
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mainDiv1 {
+        width: 100%;
+        border: 1px solid rgb(244, 28, 147);
+
+    }
+
+    .forstar3 {
+        margin-right: 0px;
+    }
+
+    .forstar3,
+    .forstar2 {
+        margin-top: 10px;
+
+    }
+}

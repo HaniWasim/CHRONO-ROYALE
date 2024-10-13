@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addtocart</title>
+    <link rel="stylesheet" href="addtocart.css">
+</head>
+<body>
+    <h1>Cart</h1>
+    <div id="watchList"></div>
+
+    <script>
+        // Retrieve the array from localStorage
+        const mainArray = JSON.parse(localStorage.getItem("mainArray")) || [];
+
+        // Get the container to display the watches
+        const watchList = document.getElementById("watchList");
+
+        // Display each watch's name and price
+        function displayWatches() {
+            let totalPrice = 0;  // Initialize a variable to hold the total price
+            watchList.innerHTML = '';  // Clear the existing content
+
+            mainArray.forEach((item, index) => {
+                // Parse the price to a number and add it to the total
+        const priceValue = parseFloat(item.price.replace(/,/g, '')); // Remove commas and convert to float
+        totalPrice += priceValue; // Add the price of the current item to totalPrice
+
+
+                // Create a delete button with an onclick event
+                watchList.innerHTML += `
+                    <div class="watch-item">
+                        <div class="watch-info">
+                            <span>${index + 1}. Name: ${item.name}</span>
+                            <span>Price: ${item.price}</span>
+                        </div>
+                        <button class='deleteButton' onclick="deleteWatch(${index})">Delete</button>
+                    </div>
+                `;
+            });
+
+            // Display the total price at the end of the watch list
+    watchList.innerHTML += `
+        <div class="total-price">
+            <strong>Total Price: RS.${totalPrice.toLocaleString()}</strong>
+        </div>
+    `;
+        }
+
+
+        // Function to delete a watch from the list
+        function deleteWatch(index) {
+            // Remove the item from the mainArray
+            mainArray.splice(index, 1);
+
+            // Update the localStorage with the new array
+            localStorage.setItem("mainArray", JSON.stringify(mainArray));
+
+            // Re-display the watches after deletion
+            displayWatches();
+        }
+
+        // Initially display the watches
+        displayWatches();
+    </script>
+    <script src="cart.js"></script>
+</body>
+</html>

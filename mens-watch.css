@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevents horizontal scroll */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+:root {
+    --font-rale: "Raleway", sans-serif;
+    --Golden: rgb(193, 146, 35);
+    --font-poppins: "poppins", sans-serif;
+    --font-gromond: "Cormorant Garamond", serif;
+}
+
+
+
+nav>h2 {
+    color: var(--Golden);
+    font-family: var(--font-gromond);
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(75, 75, 75);
+    border-bottom: 1px solid rgb(75, 75, 75);
+    text-align: center;
+    background-color: black;
+}
+
+.innerMw01 {
+    color: white;
+    /* margin-bottom: 30%;
+    margin-top: 10px; */
+    margin: 10px 0 10% 10px;
+}
+
+.mainMw01 {
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    border: 1px solid var(--Golden);
+    width: 30%;
+    border-radius: 10px;
+   
+}
+
+.mw1 {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    width: 100%;
+}
+
+main,
+.innerFlx {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.innerFlx {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerMw01 h1 {
+    color: rgba(205, 175, 130, 1);
+    font-family: var(--font-gromond);
+    font-weight: 300;
+    font-size: 23px;
+    /* text-align: center; */
+}
+
+.innerMw01 h1 span {
+    margin-left: 10%;
+    color: rgb(208, 204, 204);
+    font-size: 16px;
+}
+.innerMw01 h5{ 
+font-family: var(--font-rale);
+margin: 20px 0;
+letter-spacing: 4px;
+    font-size: 17px;
+    font-weight: 300;
+    /* width: 100%; */
+    /* text-align: center; */
+}
+/* .mw2,.mw3,.mw4,.mw5,.mw6{
+    border: 1px solid red;
+} */
+.mw2,.mw3,.mw4,.mw5,.mw6{
+    width: 100%;
+    margin-top: 10px;
+    height:190px;   
+    object-fit: cover;
+    /* border: 1px solid red; */
+}
+.innerMw01 p{
+    font-family: var(--font-poppins);
+    color: rgb(181, 180, 180);
+    /* text-align: center; */
+    /* opacity: 1; */
+}
+.innerMw01 h6{
+        color: rgba(205, 175, 130, 1);
+font-size: 15px;
+margin-top: 10px;
+font-weight: 400;
+margin-bottom: 40px;
+}
+.innerFlx>h4{
+    font-weight: 300;
+    font-style: 12px;
+}
+.innerFlx>h4>span{
+    display: block;
+    margin-top: 10px;
+    font-family: var(--font-rale);
+    font-size: 32px;
+    color: rgba(205, 175, 130, 1);
+
+}
+.innerFlx>button{
+    padding: 5px 17px;
+    background-color:transparent ;
+    border: 0.7px solid var(--Golden);
+    margin-right: 10px;
+    color: rgba(205, 175, 130, 1);
+    font-weight: 500;
+    font-family: var(--font-rale);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.innerFlx>button:hover{
+    color:black ;
+    background-color: rgba(205, 175, 130, 1);
+}
+.mainHearty02{
+    position: relative;
+}
+ .hearty{
+    position: absolute;
+    top: 3px;
+    right:  10px;
+    font-size: 33px;
+    color: rgb(221, 155, 55);
+    /* visibility: hidden; */
+    display: none;
+}
+.mainMw01:hover .hearty{
+    display: block;
+    /* visibility: visible; */
+}
+nav>div>a>img{
+    /* display: inline; */
+    width: 80px;
+}
+nav>div{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 8px 0 0 10px;
+}
+@media (max-width:497px) {
+    .innerFlx>h4>span{
+        font-size: 12px;
+        margin-bottom: 6px;
+font-weight: 700;
+    }
+}
+@media (max-width:377px) {
+main{
+    flex-direction: column;
+
+    width: 100vw;
+}
+.mainMw01{
+    width: 90%;
+}
+}
