@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>addtocart</title>
     <link rel="stylesheet" href="addtocart.css">
 </head>
+
 <body>
     <h1>Cart</h1>
     <div id="watchList"></div>
+    <div  class="CONTINUE">
 
+        <a class="CONTINUE" href="./index.html"><button>CONTINUE SHOPPING</button></a>
+    </div>
     <script>
         // Retrieve the array from localStorage
         const mainArray = JSON.parse(localStorage.getItem("mainArray")) || [];
@@ -24,8 +29,8 @@
 
             mainArray.forEach((item, index) => {
                 // Parse the price to a number and add it to the total
-        const priceValue = parseFloat(item.price.replace(/,/g, '')); // Remove commas and convert to float
-        totalPrice += priceValue; // Add the price of the current item to totalPrice
+                const priceValue = parseFloat(item.price.replace(/,/g, '')); // Remove commas and convert to float
+                totalPrice += priceValue; // Add the price of the current item to totalPrice
 
 
                 // Create a delete button with an onclick event
@@ -41,9 +46,9 @@
             });
 
             // Display the total price at the end of the watch list
-    watchList.innerHTML += `
+            watchList.innerHTML += `
         <div class="total-price">
-            <strong>Total Price: RS.${totalPrice.toLocaleString()}</strong>
+            Total Price: RS.${totalPrice.toLocaleString()}
         </div>
     `;
         }
@@ -66,4 +71,5 @@
     </script>
     <script src="cart.js"></script>
 </body>
+
 </html>

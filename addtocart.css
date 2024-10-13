@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+:root {
+    --font-rale: "Raleway", sans-serif;
+    --Golden: rgb(146, 102, 0);
+    --font-poppins: "poppins", sans-serif;
+    --font-gromond: "Cormorant Garamond", serif;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+}
+
+h1 {
+    /* text-decoration: underline;
+    border-bottom: 1px solid var(--Golden); */
+    color: var(--Golden);
+    font-size: 42px;
+    font-weight: 900;
+    font-family: var(--font-gromond);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.watch-item {
+font-family: var(--font-rale);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: var(--Golden);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.watch-item button {
+    background-color: gray;
+    margin-left: 20px;
+    color: black;
+    border: none;
+    font-family: var(--font-poppins);
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.watch-item button:hover {
+    background-color: black;
+    color: gray;}
+.watch-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+.total-price {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: right; 
+    padding: 10px;
+    background-color: black; 
+    border-radius: 5px; 
+    border: .7px solid rgb(100, 100, 100)  ;
+    justify-content: flex-end;
+    color: var(--Golden);
+    text-align: center;
+    font-family: var(--font-poppins);
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.CONTINUE{
+    /* width: 100vw; */
+    margin-top: 10px;
+    /* padding: 10px; */
+    /* border: 1px solid red; */
+    text-align: end;
+}
+.CONTINUE>a>button{
+    padding: 4px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--Golden);
+    border: .6px solid gray;
+    border-radius: 7px;
+}
+.CONTINUE>a>button:hover{
+    background-color: var(--Golden);
+    color: black;
+}
